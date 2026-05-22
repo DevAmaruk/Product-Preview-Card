@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+:root {
+  --heading-text: #1c232b;
+  --text-primary: #6c7289;
+  --accent: #3d8168;
+  --white: #ffffff;
+  --background: #f2eae2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.card-container {
+  display: grid;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card-container .card-image {
+  width: 100%;
+}
+
+.product_information {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.product_information .product_type {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+.product_information .product_name {
+  margin: 0;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--heading-text);
+}
+.product_information .product_description {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+.product_information .prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.product_information .prices .product_price {
+  margin: 0;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--accent);
+}
+.product_information .prices .product_original_price {
+  color: var(--text-primary);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  text-decoration-line: line-through;
+}
+.product_information .add_to_cart {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: var(--accent);
+  color: var(--white);
+}/*# sourceMappingURL=styles.css.map */
