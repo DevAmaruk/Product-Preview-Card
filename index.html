@@ -1,61 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
 
-    <title>Frontend Mentor | Product preview card component</title>
-  </head>
-  <body>
-    <main>
-      <article class="card-container">
-        <img
-          class="card-image"
-          src="images/image-product-mobile.jpg"
-          alt="perfume bottle"
-        />
-        <section class="product_information">
-          <h2 class="product_type">perfume</h2>
-          <h1 class="product_name">Gabrielle Essence Eau De Parfum</h1>
-          <p class="product_description">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <section class="prices">
-            <p class="product_price">&#36;149.99</p>
-            <p class="product_original_price">&#36;169.99</p>
-          </section>
-          <button class="add_to_cart" type="button">
-            <img
-              class="cart_image"
-              src="images/icon-cart.svg"
-              alt="cart icon"
-            />Add to Cart
-          </button>
-        </section>
-      </article>
-    </main>
-  </body>
+		<title>Frontend Mentor | Product preview card component</title>
+	</head>
+	<body>
+		<main>
+			<article class="card-container">
+				<picture>
+					<source
+						media="(min-width: 40rem)"
+						srcset="images/image-product-desktop.jpg"
+						width="600px"
+						height="900px" />
+					<img
+						class="card-image"
+						src="images/image-product-mobile.jpg"
+						alt="perfume bottle" />
+				</picture>
+				<section class="product_information">
+					<h2 class="product_type">perfume</h2>
+					<h1 class="product_name">Gabrielle Essence Eau De Parfum</h1>
+					<p class="product_description">
+						A floral, solar and voluptuous interpretation composed by Olivier
+						Polge, Perfumer-Creator for the House of CHANEL.
+					</p>
+					<section class="prices">
+						<p class="product_price">&#36;149.99</p>
+						<p class="product_original_price">&#36;169.99</p>
+					</section>
+					<button class="add_to_cart" type="button">
+						<img
+							class="cart_image"
+							src="images/icon-cart.svg"
+							alt="cart icon" />Add to Cart
+					</button>
+				</section>
+			</article>
+		</main>
+	</body>
 </html>
