@@ -6,6 +6,7 @@
   --accent: #3d8168;
   --white: #ffffff;
   --background: #f2eae2;
+  --hover: #1A4032;
 }
 
 *,
@@ -21,10 +22,19 @@ html {
 
 body {
   background-color: var(--background);
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 0.5rem;
+  margin: 0;
 }
 
+@media (width >= 40rem) {
+  body {
+    height: 100vh;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
 .card-container {
   display: grid;
   background-color: var(--white);
@@ -33,6 +43,19 @@ body {
 }
 .card-container .card-image {
   width: 100%;
+}
+@media (width >= 40rem) {
+  .card-container .card-image {
+    height: 100%;
+  }
+}
+@media (width >= 40rem) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    width: 37.5rem;
+    height: 28.5rem;
+  }
 }
 
 .product_information {
@@ -47,6 +70,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
+  line-height: 120%;
+  letter-spacing: 0.3125rem;
   color: var(--text-primary);
   text-transform: uppercase;
 }
@@ -55,6 +80,8 @@ body {
   font-family: "Fraunces", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0rem;
   color: var(--heading-text);
 }
 .product_information .product_description {
@@ -62,6 +89,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
+  line-height: 160%;
+  letter-spacing: 0rem;
   color: var(--text-primary);
 }
 .product_information .prices {
@@ -75,6 +104,8 @@ body {
   font-family: "Fraunces", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0rem;
   color: var(--accent);
 }
 .product_information .prices .product_original_price {
@@ -82,6 +113,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 0.8125rem;
+  line-height: 120%;
+  letter-spacing: 0rem;
   text-decoration-line: line-through;
 }
 .product_information .add_to_cart {
@@ -98,6 +131,21 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
+  line-height: 110%;
+  letter-spacing: 0rem;
   background-color: var(--accent);
   color: var(--white);
+  transition-duration: 0.5s;
+}
+.product_information .add_to_cart:hover {
+  background-color: var(--hover);
+}
+.product_information .add_to_cart:focus-visible {
+  background-color: var(--hover);
+}
+@media (width >= 40rem) {
+  .product_information {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */
