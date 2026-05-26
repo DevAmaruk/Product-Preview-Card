@@ -1,32 +1,29 @@
 /* montserrat-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: url('fonts/montserrat-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	src: url("fonts/montserrat-v31-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/montserrat-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/montserrat-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* fraunces-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/fraunces-v38-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Fraunces";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/fraunces-v38-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-
-
 
 :root {
 	--heading-text: #1c232b;
@@ -34,7 +31,7 @@
 	--accent: #3d8168;
 	--white: #ffffff;
 	--background: #f2eae2;
-	--hover: #1A4032;
+	--hover: #1a4032;
 }
 
 *,
@@ -51,11 +48,11 @@ html {
 body {
 	background-color: var(--background);
 	padding: 0.5rem;
-	margin: 0
+	margin: 0;
 }
 
-@media (width >= 40rem){
-	body{
+@media (width >= 40rem) {
+	body {
 		height: 100vh;
 		padding: 0;
 		display: grid;
@@ -70,12 +67,13 @@ body {
 	border-radius: 0.5rem;
 	overflow: hidden;
 
-
 	.card-image {
 		width: 100%;
 		object-fit: cover;
+	}
 
-		@media (width >= 40rem){
+	@media (width >= 40rem) {
+		.card-image {
 			height: 100%;
 			width: 100%;
 		}
@@ -174,15 +172,15 @@ body {
 		transition-duration: 0.5s;
 	}
 
-	.add_to_cart:hover{
-		background-color: var(--hover)
+	.add_to_cart:hover {
+		background-color: var(--hover);
 	}
 
-	.add_to_cart:focus-visible{
-		background-color: var(--hover)
+	.add_to_cart:focus-visible {
+		background-color: var(--hover);
 	}
 
-	@media (width >= 40rem){
+	@media (width >= 40rem) {
 		display: flex;
 		flex-direction: column;
 	}
